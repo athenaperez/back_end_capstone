@@ -1,0 +1,22 @@
+{
+  "name": "back_end_capstone",
+  "description": "Nashville Software School Cohort 17, Backend Capstone",
+  "main": "index.js",
+  "authors": [
+    "Athena Perez <athenaperez@me.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/athenaperez/back_end_capstone",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "materialize": "^0.98.2",
+    "angular": "^1.6.4",
+    "angular-route": "^1.6.4"
+  }
+}
