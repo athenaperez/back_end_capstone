@@ -2,12 +2,15 @@
 
 const mongoose = require('mongoose')
 
-const Dog = mongoose.model('dog', {
-	name: String,
-	owner: String,
-	breed: String,
-	age: Number,
-	weight: Number
+const Cocktail = mongoose.model('cocktail', {
+	cocktail: String,
+	ingredients: [{
+		ingredient: String,
+		measurement: Number,
+		Spec: String
+	}],
+	glass: String,
+	directions: String
 })
 
 // const User = mongoose.model('user', {
@@ -15,4 +18,4 @@ const Dog = mongoose.model('dog', {
 // 	password: String
 // })
 
-module.exports = { Dog }
+module.exports = { Cocktail }
