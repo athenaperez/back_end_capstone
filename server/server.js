@@ -10,6 +10,17 @@ const app = express()
 const PORT = process.env.PORT || 3000
 const routes = require('./routes/')
 
+// app.use(express.static('client'))
+
+// cors issues...cross origin requests...
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  res.header("Access-Control-Allow-Methods", "GET, POST,HEAD, OPTIONS,PUT, DELETE, PATCH");
+  next();
+});
+
+
 app.use(json())
 app.use(routes)
 

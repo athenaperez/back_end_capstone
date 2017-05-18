@@ -1,7 +1,184 @@
-<h1>Home</h1>
-
 <h2>add cocktail here</h2>
 
 
+<br>
+<br>
 
-<h2>testing</h2>
+
+
+
+ <div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s9">
+          <input ng-model="newCocktail.cocktail" placeholder="DRINK NAME" id="drink_name" type="text" class="validate">
+<!--           <label for="drink_name">Drink Name</label> -->
+        </div>
+
+
+
+<!-- ______________________________ -->
+<!-- IGREDIENT TITLE -->
+    <div class="row">
+      <div class="col s12">
+
+			        <div class="inline input-field">
+			          <input ng-model="newCocktail.ingredients.ingredient" placeholder="ADD INGREDIENT" id="ingredient" type="text" class="validate">
+<!-- 			          <label for="ingredient">Ingredient</label> -->
+			        </div>
+
+
+
+<!-- QUANITY ONE, DROP DOWN ONE -->
+
+
+
+							<div class="input-field inline">
+							    <select name="singleSelect" ng-model="newCocktail.ingredients.measurement1">
+
+							      <option value="0" selected>0</option>
+							      <option value="1">1</option>
+							      <option value="2">2</option>
+							      <option value="3">3</option>
+							      <option value="4">4</option>
+							      <option value="5">5</option>
+							      <option value="6">6</option>
+							    </select>
+							    <label>test</label>
+							  </div>
+
+
+
+
+<!-- QUANTITY TWO -->
+<!-- ng-model="newCocktail.ingredients.measurement2" -->
+   						<div class="input-field inline">
+		  					<select>
+
+										<option value="" selected>1/8</option>
+							      <option value="2">1/4</option>
+							      <option value="3">1/3</option>
+							      <option value="3">1/4</option>
+							      <option value="3">1/2</option>
+							      <option value="3">2/3</option>
+							      <option value="3">3/4</option>
+							    </select>
+							    <label>test</label>
+							</div>
+
+
+
+<!-- SPECS -->
+
+   						<div class="inline input-field">
+
+		  					<select>
+
+										<option value="" selected>oz</option>
+							      <option value="2">ml</option>
+							      <option value="3">drop</option>
+							      <option value="3">dash</option>
+							      <option value="3">tsp</option>
+							      <option value="3">tbsp</option>
+							      <option value="3">cup</option>
+							      <option value="3">pint</option>
+							      <option value="3">cl</option>
+							      <option value="3">l</option>
+							      <option value="3">pinch</option>
+							    </select>
+							    <label>test</label>
+							</div>
+
+
+<!-- _____________________________________ -->
+
+
+
+		</div>
+  </div>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<!-- _________________________________ -->
+<!-- GLASS OPTION -->
+
+
+      <div class="row">
+        <div class="col s12">
+          GLASS:
+
+   						<div class="inline input-field">
+		  					<select ng-model="newCocktail.glass">
+										<option value="" selected>collins</option>
+							      <option value="2">double old fashioned</option>
+							      <option value="3">collins</option>
+							      <option value="3">nick and nora</option>
+							      <option value="3">bordeaux</option>
+							    </select>
+							    <label>test</label>
+							</div>
+
+
+
+
+          </div>
+        </div>
+<!-- ____________________________ -->
+<br>
+<br>
+<br>
+<br>
+
+<!-- ___________________________ -->
+<!-- ADD INGREDIENT -->
+
+     <div class="row">
+        <div class="col s12">
+          ADD INGREDIENT:
+          <div class="input-field inline">
+						<a class="btn-floating btn-large waves-effect waves-light red">
+							<i class="material-icons">add</i>
+						</a>
+					</div>
+				</div>
+			</div>
+
+<br>
+<!-- _________________________________ -->
+<!-- DIRECTIONS -->
+
+			  <div class="row">
+			    <form class="col s12">
+			      <div class="row">
+			        <div class="input-field col s12">
+			          <textarea ng-model="newCocktail.recipe"id="textarea1" class="materialize-textarea"></textarea>
+			          <label for="textarea1">RECIPE</label>
+			        </div>
+			      </div>
+			    </form>
+			  </div>
+
+
+<!-- ____________________________ -->
+
+
+      </div>
+    </form>
+  </div>
+
+
+<!-- ______________________________ -->
+<!-- SUBMIT BUTTON -->
+    <a class="waves-effect waves-light btn" value="add cocktail" ng-click="addCocktail()">Add Cocktail</a>
+
+
+  </div>
+
+

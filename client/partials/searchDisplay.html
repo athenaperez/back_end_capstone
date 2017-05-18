@@ -1,0 +1,49 @@
+
+
+<!-- search bar -->
+       <div class="input-field col s6">
+          <input ng-model="search.$" placeholder="SEARCH COCKTAILS" id="first_name" type="text" class="validate">
+          <label for="first_name">Search</label>
+  </div>
+<!--         <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">search</i></a> -->
+
+
+<!-- _________________________ -->
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+      <div class="row">
+        <div class="col s12 m7">
+          <div class="card" ng-repeat="cocktail in cocktails | filter:search:strict">
+            <div class="card-image">
+              <img src="http://cdn.liquor.com/wp-content/uploads/2010/08/c-and-b-old-fashioned1.jpg">
+              <span class="card-title">{{cocktail.cocktail}}</span>
+            </div>
+            <div class="card-content">
+              <p>
+
+									<ul>
+										<li>{{cocktail.cocktail}}</li>
+										<li ng-repeat="ingredient in cocktail.ingredients">{{ingredient.measurement}}
+										{{ingredient.ingredient}} {{ingredient.ingredient}}</li>
+
+										<li>instructions</li>
+										<li>glass</li>
+									</ul>
+
+
+              </p>
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+      </div>

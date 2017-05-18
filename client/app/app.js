@@ -5,7 +5,14 @@ app.config(['$routeProvider', function($routeProvider) {
 	.when('/', {
 		templateUrl: 'partials/home.html',
 		controller: 'HomeCtrl'
+	}).when('/search', {
+		templateUrl: 'partials/searchDisplay.html',
+		controller: 'SearchCtrl'
 	})
 
+
+  $(document).ready(function() {
+    $('select').material_select();
+  });
 
 }])
