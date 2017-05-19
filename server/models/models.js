@@ -6,9 +6,15 @@ const Cocktail = mongoose.model('cocktail', {
 	cocktail: String,
 	ingredients: [{
 		ingredient: String,
-		measurement1: Number,
-		measurement2: Number,
-		specs: String
+		measurement1: String,
+		measurement2: String,
+		specs: String,
+	},
+	{
+		ingredientB: String,
+		measurement1B: String,
+		measurement2B: String,
+		specsB: String
 	}],
 	glass: String,
 	recipe: String

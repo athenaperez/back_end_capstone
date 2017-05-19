@@ -31,11 +31,15 @@
 
 									<ul>
 										<li>{{cocktail.cocktail}}</li>
-										<li ng-repeat="ingredient in cocktail.ingredients">{{ingredient.measurement}}
-										{{ingredient.ingredient}} {{ingredient.ingredient}}</li>
+										<li ng-repeat="ingredient in cocktail.ingredients">
+										{{ingredient.ingredient}}
+										{{ingredient.measurement1}}
+										{{ingredient.measurement2}}
+										{{ingredient.specs}}
+										</li>
+										<li>{{cocktail.glass}}</li>
+										<li>{{cocktail.recipe}}</li>
 
-										<li>instructions</li>
-										<li>glass</li>
 									</ul>
 
 

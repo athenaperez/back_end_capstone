@@ -11,6 +11,8 @@ app.config(['$routeProvider', function($routeProvider) {
 	})
 
 
+
+// materialize drop down selects
   $(document).ready(function() {
     $('select').material_select();
   });

@@ -3,6 +3,7 @@ app.factory('CocktailFactory', function($http) {
 
 	return {
 		add: function(newCocktail) {
+			console.log(newCocktail)
 			return new Promise((resolve, reject) => {
 				$http.post(`http://localhost:3000/cocktails`, newCocktail)
 					.then((data) => {
