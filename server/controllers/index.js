@@ -6,7 +6,6 @@ const { Cocktail } = require('../models/models.js')
 
 // __________________________
 const addCocktail = (req, res, err) => {
-	console.log(req.body)
 	Cocktail
 	.create(req.body)
   .then((cocktail) => {
