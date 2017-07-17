@@ -9,7 +9,7 @@ const addCocktail = (req, res, err) => {
 	Cocktail
 	.create(req.body)
   .then((cocktail) => {
- 		console.log('inside addCocktail controller')
+ 		// console.log('inside addCocktail controller')
     res.send("done")
   })
   .catch(err)

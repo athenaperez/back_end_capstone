@@ -8,13 +8,12 @@ Athena Perez
 
 <p>Developed as my back end capstone project for Nashville Software School.
 <br>A back end demonstration:
-<li>Created a clear, self-explanitory front end interface using AngularJS and Materialize</li>
-<li></li>
-<li></li>
+<li>Created a clear, self-explanitory front end interface || using AngularJS(1) and Materialize || </li>
+<li>Input craft cocktail recipe ingredients and instructions || make Post request with new cocktail info as payload ||</li>
+<li>Display all stored cocktails on front page || using Get request || </li>
+<li>Search for specific cocktail or ingredient || Angular filter ||</li>
 <li>Built using HTML, CSS, JavaScript, JQuery, AngularJS, Materialize, Node, Express, MongoDB, Mongoose</li>
 </p>
-
-
 
 
 
